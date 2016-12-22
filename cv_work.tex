@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as thehttps://preview.overleaf.com/public/czwvvxzknjqj/images/fa6f8726841f80932e8ac6e4de79722de090a3cc.jpeg
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.7in,top=0.7in,right=0.7in,bottom=0.7in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{ZENG, YUKUN} % Your name
+\address{+1 (979)739 9315 \\ yzeng@tamu.edu}
+\address{1600 Southwest Pkwy APT 1301 \\ College Station, TX 77840, U.S.} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+ % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf Texas A\&M University} \hfill {\bf College Station, TX} 
+\\ Master of Science in Computer Science \hfill {\em Expected Graduation: July, 2018}
+\vspace*{-0.2em}
+
+{\bf Harbin Institute of Technology} \hfill {\bf Weihai, China} 
+\\ Bachelor of Engineering in Software Engineering \hfill {\em Sep. 2012--July 2016}
+\\ GPA: Overall 3.45/4.00, Major 3.70/4.00
+
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Campus Services}
+%{\bf President} \hfill {HIT Robot Innovation Workshop} 
+%\\{\bf Teaching Assistant} \hfill {School of Computer Sci. and Tech., HIT} 
+%\\{\bf Research Assistant} \hfill {HIT-NS Joint R\&D Center} 
+%\\{\bf Student Engineer} \hfill {HIT Network Center} 
+% Technical Strenths
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%Computer Languages &  C/C++, MATLAB \\
+%Software \& Tools & HTML, LaTeX, Excel, Gerris, Mathematica, ASPEN Plus, Tecplot \\
+%\end{tabular}
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+\begin{rSubsection}{Graduate Researcher}{College Station, TX}{Parasol Lab, supervised by Prof. Nancy M. Amato}{Sep. 2016 - Present}
+\item Developed a self-motivated Robotics Motion Planner with Midpoint Guided Sampling
+\item Researching on simulating robot group behavior, e.g., Multi Robot Persistent Coverage Problem simulation
+\end{rSubsection}
+\begin{rSubsection}{Grader}{College Station, TX}{CSCE 410 Operating Systems, Prof. Dilma Da Silva}{Sep. 2016 - Present}
+\item Developed test case for grading projects, built automated testing environment, answered students' questions
+\end{rSubsection}
+
+\begin{rSubsection}{Software Engineer Intern}{Shenzhen, China}{ARRIS Group}{Jan. - May 2016}
+\item Benchmarked network performance of our product to track performance bottlenecks and improve modem bandwidth
+\item Revised routing architecture to achieve proper LAN connectivity and meantime ensure overall security
+\end{rSubsection}
+\begin{rSubsection}{Co-Chair}{Weihai, China}{HIT Robot Innovation Workshop}{May 2015 - Jan. 2016}
+\item Led the development of two competition projects in National Robot Championship
+\item Used RoboBasic to develop a matrix approach of stable robot gait planning for RoboNova series robots
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Selected Projects}
+\begin{rSubsection}{Mobile Storm: Distributed real-time stream processing for mobile cloud}{Research Assistant}{}{}
+\item Proposed greedy and genetic algorithms for job topology allocation on multi workers with varying executors (NP-Hard), generally yields results within $30\%$ gap comparing to near-optimal solution (CPLEX) but runs 100x faster
+\item Developed a Neural-like topology generator for job submission simulation to test our allocation algorithm
+\item Working on distributed streaming face recognition applications for real-world application experiments
+
+\end{rSubsection}
+
+\begin{rSubsection}{High-responsive scheduling for heterogeneous Hadoop YARN cluster}{Research Assistant}{}{}
+\item Developed a cloud computing benchmark suite to test performance of heterogeneous Hadoop YARN cluster running multi frameworks like MapReduce, Spark, etc
+\item Proposed a novel job size prediction approach based on Machine Learning techniques and designed a size-based scheduling framework, which substantially improved the responsiveness of Hadoop cluster
+
+\end{rSubsection}
+
+
+%------------------------------------------------
+
+%\begin{rSubsection}{Motion Planning\&RoboDance Implementation}{May 2015 - Jan 2016}{Leader}{HIT Robot Innovation Workshop}
+%\item Implemented a robot motion planning system and ensured the robot stability in the pose switch process.
+%\item Programmed humanoid robot dance and solved the synchronization problem among multiple robots.
+%\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Flash Vocabulary - Lightweight website for boosting vocabulary online}{Leader}{}{}
+\item Devised a novel MVC-derived pattern that best fits the interaction mode of our website
+\item Developed a comprehensive front-end framework to simplify front-end codes and create a universal UI
+\item Adopted AJAX and HTML5 Local Storage to avoid unnecessary reloading and enhance user experience
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Jizhi Tutor Service - Online edu platform on Cloud}{Co-Leader}{}{}
+\item Applied HTML, CSS, Javascript (JQuery) to the front-end dev, used complex SQL Server database (with triggers, view, stored procedure, etc) and .NET platform for data storage and business logic
+\item Lead the entire platform dev from designing, implementation to Cloud deployment and maintenance
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{General Coding - An APP to improve programmers' productivity}{Key Developer}{}{}
+\item Developed the APP which highlights on improving user experience by optimizing data structure and algorithms, extensible to multi programming language API integration
+\item Implemented an objective linked-list and fuzzy query algorithm (Levenshtein Distance) in our Full-Text
+Inter-PL (Programming Language) API search engine
+\end{rSubsection}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%\begin{rSection}{Activities}
+%{\bf Grader} \hfill {CSE, TAMU}\\
+%{\bf Member} \hfill {Parasol Lab, TAMU}\\
+%{\bf President} \hfill {Robot Innovation Workshop, HIT}\\
+%{\bf Volunteer} \hfill {MSRA Language Tech Summer School}\\
+%{\bf Student Engineer} \hfill {Network Center, HIT}
+
+
+
+% Relevant Courses
+%\itab{\textbf{Core Courses}} \tab{}  \tab{\textbf{Other Courses}}
+%\\ \itab{Fluid Mechanics \& its applications } \tab{}  \tab{Computational Methods in Engineering}
+%\\ \itab{Thermodynamics} \tab{}  \tab{Fundamental of Computing} 
+%\\ \itab{Heat Transfer \& its applications} \tab{}  \tab{Probability and Statistics} 
+%\\ \itab{Mass Transfer \& its applications} \tab{} \tab{Calculus \& Linear Algebra}
+%\\ \itab{Transport Phenomena (ongoing)} \tab{} \tab{Introduction to Mechanics}
+% \\ \itab{Process Control (ongoing)} \tab{} \tab{Electrodynamics}
+
+%\end{rSection}
+\begin{rSection}{Publications}
+
+{[1]Liu, Yang, }{\bf Yukun Zeng}{ and Xuefeng Piao. ``High-Responsive Scheduling with MapReduce Performance Prediction on Hadoop YARN.'' Embedded and Real-Time Computing Systems and Applications (RTCSA), 2016 IEEE 22nd International Conference on. IEEE, 2016.
+}
+\vspace*{-0.2em}
+
+{[2]Gaoyang Li, Guangri Quan, }{\bf Yukun Zeng}{, ``MASS: A short reads alignment tool oriented to massive}{data,'' The Workshop on Algorithms in Bioinformatics 2016, submitted.}
+
+\end{rSection}
+
+
+\begin{rSection}{Honors\&Awards}
+
+{\bf 1st Prize in National Robot Championship} \hfill {July 2015}
+\vspace*{-0.4em}
+
+{\bf Honorable Mention in Mathematical Contest in Modeling (MCM)} \hfill {Apr. 2015}
+\vspace*{-0.4em}
+
+{\bf 2nd Prize in Software Design Competition} \hfill {Mar. 2014} 
+\vspace*{-0.4em}
+
+{\bf People's Scholarship} 5 times \hfill {Oct. 2013, Oct. 2014, May 2015, Oct. 2015, Apr. 2016}
+\vspace*{-0.4em}
+
+\end{rSection}
+
+\end{document}
