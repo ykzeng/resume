@@ -23,6 +23,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.7in,top=0.7in,right=0.7in,bottom=0.7in]{geometry} % Document margins
+\usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{ZENG, YUKUN} % Your name
@@ -33,7 +34,7 @@
 
 \begin{document}
 \begin{rSection}{Objective}
-Seeking a software engineer intership for 2017 summer
+Seeking a software/research internship for 2017 summer, see \href{https://github.com/vincenttsang}{Github} and \href{https://parasol.tamu.edu/~yzeng/}{Homepage} for more info about me
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -80,8 +81,8 @@ Seeking a software engineer intership for 2017 summer
 \begin{rSection}{Experience}
 \begin{rSubsection}{Graduate Researcher}{College Station, TX}{Parasol Lab, supervised by Prof. Nancy M. Amato}{Sep. 2016 - Present}
 \item Designed and implemented several Robot Motion Planner with Midpoint Guided Sampling
-\item Experiences in working with robotic fundamentals, like VIZMO++ (robot motion planning visualization), PMPL(Parasol Motion Planning Library)
-\item Researching on simulating robot group behavior, e.g., Multi Robot Persistent Coverage Problem simulation
+\item Experiences in working with robotic fundamentals libraries, like \href{https://parasol.tamu.edu/groups/amatogroup/research/UserGuided/Old/vizmo++/}{VIZMO++}, PMPL(Parasol Motion Planning Library), and with parallel computing library (\href{https://parasol.tamu.edu/groups/rwergergroup/research/stapl/}{STAPL}) for improving motion planning performance
+\item Generalizing embedding graph, flow graph and dynamic region utilities used in \href{http://wafr2016.berkeley.edu/papers/WAFR_2016_paper_36.pdf}{Dynamic Region-biased RRT}
 \end{rSubsection}
 
 \begin{rSubsection}{Software Engineer Intern}{Shenzhen, China}{ARRIS Group}{Jan. - May 2016}
@@ -95,14 +96,14 @@ Seeking a software engineer intership for 2017 summer
 \end{rSection}
 
 \begin{rSection}{Selected Projects}
-\begin{rSubsection}{Mobile Storm: Distributed real-time stream processing for mobile cloud}{Research Assistant}{}{}
+\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7335296/?arnumber=7335296}{Mobile Storm: Distributed Real-time Stream Processing for Mobile Cloud}}{Research Assistant}{}{}
 \item Proposed greedy and genetic algorithms for job topology allocation on multi workers with varying executors (NP-Hard), generally yields results within $30\%$ gap comparing to near-optimal solution (CPLEX) but runs 100x faster
 \item Developed a Neural-like topology generator for job submission simulation to test our allocation algorithm
-\item Working on distributed streaming face recognition applications for real-world application experiments, which involves socket communication, multi-threading, stream processing, etc.
+\item Working on distributed streaming face recognition applications for real-world application experiments, which involves socket communication, multi-threading, stream processing, etc
 
 \end{rSubsection}
 
-\begin{rSubsection}{High-responsive scheduling for heterogeneous Hadoop YARN cluster}{Research Assistant}{}{}
+\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7579961/}{Hi-Responsive Scheduling with MR Performance Prediction on Hadoop YARN}}{Research Assistant}{}{}
 \item Experiences in Hadoop YARN basics like cluster setup and maintenance, Hadoop APIs (including RESTful APIs)
 \item Developed a cloud computing benchmark suite to test performance of heterogeneous Hadoop YARN cluster running multi frameworks like MapReduce, Spark, etc
 \item Proposed a novel job size prediction approach based on Machine Learning techniques and designed a size-based scheduling framework, which substantially improved the responsiveness of Hadoop cluster
@@ -165,17 +166,17 @@ Inter-PL (Programming Language) API search engine
 %\end{rSection}
 \begin{rSection}{Publications}
 
-{[1]Liu, Yang, }{\bf Yukun Zeng}{ and Xuefeng Piao. ``High-Responsive Scheduling with MapReduce Performance Prediction on Hadoop YARN.'' Embedded and Real-Time Computing Systems and Applications (RTCSA), 2016 IEEE 22nd International Conference on. IEEE, 2016.
+{[1]Liu, Yang, }\underline{\bf Yukun Zeng}{ and Xuefeng Piao. ``High-Responsive Scheduling with MapReduce Performance Prediction on Hadoop YARN.'' Embedded and Real-Time Computing Systems and Applications (RTCSA), 2016 IEEE 22nd International Conference on. IEEE, 2016.
 }
 \vspace*{-0.2em}
 
-{[2]Gaoyang Li, Guangri Quan, }{\bf Yukun Zeng}{, ``MASS: A short reads alignment tool oriented to massive}{data,'' The Workshop on Algorithms in Bioinformatics 2016, submitted.}
+{[2]Gaoyang Li, Guangri Quan, }\underline{\bf Yukun Zeng}{, ``MASS: A short reads alignment tool oriented to massive}{data,'' The Workshop on Algorithms in Bioinformatics 2016, submitted.}
 
 \end{rSection}
 
 
 \begin{rSection}{Honors\&Awards}
-{\bf Best Paper Award}{ for Outstanding Bachelor Dissertation} \hfill {July 2015}
+{\bf Best Paper Award}{ for Outstanding Bachelor Dissertation} \hfill {July 2016}
 \vspace*{-0.4em}
 
 {\bf Meritorious Winner(1st Prize)}{ in National Robot Championship} \hfill {July 2015}
