@@ -42,7 +42,7 @@
  
 \fancyfoot{} % clear all footer fields
 \renewcommand{\headrulewidth}{0pt}
-\rhead{2018 Full-time SDE/Big Data Positions}
+\rhead{Seeking 2018 Full-time SDE/Big Data Positions}
 \cfoot{\faGithub \hspace{0.10ex} \href{https://github.com/ykzeng/}{github.com/ykzeng/}
 | \faLinkedin \hspace{0.10ex} \href{https://linkedin.com/in/yukunzeng/}{linkedin.com/in/yukunzeng/}}
 
@@ -96,32 +96,62 @@
 
 \begin{rSection}{Work Experience}
 \begin{rSubsection}{Big Data Engineer Intern}{Big Data at AT\&T}{Dallas, TX}{June. - Aug. 2017}
-\item Frauds detection by mining millions of billing records with Hive and PySpark, total profits \textasciitilde \$1.4M.
-\item Index results using Apache Solr and visualize billing deviations with customizable plots in time series on \href{https://github.com/lucidworks/banana}{Banana}.
-\item Developed National Access Mgmt. projects progress tracker (full stack) with JavaScript (JQuery), AJAX, JSP(Java EE), fully-RESTful backend and integrated it onto AT\&T Access Analytics Tools Platform.
-\item Workflow automation with Jenkins, programming and debugging experience on Hadoop YARN, Spark and Tez.
+\item Frauds detection by mining millions of billing records with \textbf{Hive} and \textbf{PySpark}, total profits \textasciitilde \$1.4M.
+\item Index results using Apache \textbf{Solr} and visualize billing deviations with customizable plots (e.g., Heatmap) on \href{https://github.com/lucidworks/banana}{Banana}.
+\item Deved National Access Mgmt. case tracker (full stack) with nice \textbf{Bootstrap} frontend that supports \textbf{AJAX} loading and autocompletion, \textbf{RESTful Java EE} backend and integrated it onto AAT Platform.
+\item Workflow automation with \textbf{Jenkins}, programming and debugging experience on \textbf{Hadoop}, \textbf{Spark} and \textbf{Tez}.
 \end{rSubsection}
 
 \begin{rSubsection}{Software Engineer Intern}{ARRIS Technology Co., Ltd.}{Shenzhen, China}{Jan. - May 2016}
-\item Network programming with C in embedded Linux, iptables chain control, modem performance benchmarking.
+\item Network programming with \textbf{C} in \textbf{embedded Linux}, \textbf{iptables} chain control, modem performance benchmarking.
 \end{rSubsection}
 
 \begin{rSubsection}{Technical Solution Intern}{Neusoft}{Dalian, China}{July 2014 - Aug. 2014}
-\item Neusoft IM dev in Java with multithread chating, socket communication, chat history storage using Oracle DB.
+\item Neusoft IM dev in Java with \textbf{socket}, \textbf{multithread} chating, chat history storage using \textbf{Oracle DB}.
 \end{rSubsection}
 \end{rSection}
 
 
 
 \begin{rSection}{Selected Projects}
+\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7579961/}{Hi-Responsive Scheduling with MR Performance Prediction on Hadoop YARN}}{Research Assistant}{}{}
+\item Pwd-less accessibility for scalable Hadoop cluster setup and job history tracking using \textbf{Hadoop REST APIs}.
+\item Benchmark Hadoop cluster with FaceBook trace (\textasciitilde 6k Jobs) and heterogeneous MapReduce/Spark/Tez workloads. 
+\item Size-based scheduler with \textbf{Linear Regression} job size prediction achieved \textbf{10x} faster response when heavily loaded.
+\end{rSubsection}
+
 \begin{rSubsection}{vMobiNet: Emulating Wireless Network across Virtual Mobi Systems on Xen}{Research Assistant}{}{}
-\item Deployed networked mobile clusters across Android virtual machines on XenServer.
-\item Centralized network control through \emph{tc} to emulate wireless features in virtual network and network performance benchmark using \emph{iperf}.
+\item Deployed networked mobile clusters across Android virtual machines on \textbf{XenServer}.
+\item Centralized network control through \textbf{tc} to emulate wireless features in virtual network and network performance benchmark using \textbf{iperf}.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7335296/?arnumber=7335296}{Mobile Storm: Distributed Real-time Stream Processing for Mobile Cloud}}{Research Assistant}{}{}
+\item Proposed greedy and genetic algorithms for job topology allocation on multi workers with varying executors (NP-Hard), generally yields results within $30\%$ gap comparing to near-optimal solution (CPLEX) but runs 100x faster.
+\item Developed a neural-like topology generator for job submission simulation to test our allocation algorithm.
+\item Integrated facial processing utilities (including face detection, recognition, tracking, etc) and distributed computational tasks on MobiStorm platform, involving socket communication, multi-threading, stream processing, etc.
+\end{rSubsection}
+
+\begin{rSubsection}{Flash Vocabulary - Lightweight website for boosting vocabulary online}{Leader}{}{}
+\item Deved a front-end library in \textbf{CSS} to create a universal UI, avoided unneccesary page reloading through \textbf{AJAX}.
+\item Vocabulary pseudo-shuffling, reciting period arrangement based on \textbf{Ebinhaus} memory rules.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Jizhi Tutor Service - Online edu platform on Cloud}{Co-Leader}{}{}
+\item Applied \textbf{HTML, CSS, Javascript (JQuery)} to the front-end dev, used complex \textbf{SQL Server} database (with \textbf{triggers}, \textbf{view}, \textbf{stored procedure}, etc) and \textbf{.NET} platform for data storage and business logic.
+\item Lead the entire platform dev from designing, implementation to Cloud deployment and maintenance.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{General Coding - An APP to improve programmers' productivity}{Key Developer}{}{}
+\item Used \textbf{fuzzy query} algorithm (Levenshtein Distance) to recommend similar APIs in our full-text API search engine.
 \end{rSubsection}
 
 \begin{rSubsection}{CSCE 614 Computer Architecture}{advised by Prof. Daniel A. Jimenez}{}{}
-\item Cache behavior simulator with LRU and random replacement policies.
-\item \href{https://github.com/vincenttsang/CompArch/blob/master/branch-predictor/p1-final-report/p1-final-report.pdf}{Fast path-based neural branch predictor with perceptron}.
+\item Cache behavior simulator with \textbf{LRU} and \textbf{random replacement} policies.
+\item \href{https://github.com/vincenttsang/CompArch/blob/master/branch-predictor/p1-final-report/p1-final-report.pdf}{Fast path-based neural branch predictor with \textbf{perceptron}}.
 \item \href{https://github.com/vincenttsang/CompArch/blob/master/cache-replacer/p2-final-report/p2-final-report.pdf}{High performance cache replacement using re-reference interval prediction (RRIP)}.
 \end{rSubsection}
 
@@ -130,20 +160,6 @@
 \item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-2/bare_conf.pdf}{Direct Linear Transformation with Max Likelihood Estimation (Sampson Error)}.
 \item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-5/bare_conf.pdf}{Affinity 3D Reconstruction}.
 \item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/final-proj/proposal/bare_conf.pdf}{3D Reconstruction from Uncalibrated Images}.
-\end{rSubsection}
-
-\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7335296/?arnumber=7335296}{Mobile Storm: Distributed Real-time Stream Processing for Mobile Cloud}}{Research Assistant}{}{}
-\item Proposed greedy and genetic algorithms for job topology allocation on multi workers with varying executors (NP-Hard), generally yields results within $30\%$ gap comparing to near-optimal solution (CPLEX) but runs 100x faster.
-\item Developed a Neural-like topology generator for job submission simulation to test our allocation algorithm.
-\item Integrating facial processing utilities (including face detection, recognition, tracking, etc) and distributed computational tasks on MobiStorm platform, involving socket communication, multi-threading, stream processing, etc.
-
-\end{rSubsection}
-
-\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7579961/}{Hi-Responsive Scheduling with MR Performance Prediction on Hadoop YARN}}{Research Assistant}{}{}
-\item Scalable pwd-less interaccessibility, Hadoop YARN cluster setup, job history tracking using Hadoop REST APIs.
-\item Benchmark Hadoop YARN cluster with FaceBook trace and heterogeneous MR/Spark/Tez workloads.
-\item Size-based scheduling with Linear Regression job size prediction that significantly improved cluster responsiveness.
-
 \end{rSubsection}
 
 
@@ -156,24 +172,6 @@
 
 %------------------------------------------------
 
-\begin{rSubsection}{Flash Vocabulary - Lightweight website for boosting vocabulary online}{Leader}{}{}
-\item Deved a front-end library in CSS to create a universal UI, avoided unneccesary page reloading through AJAX.
-\item Vocabulary pseudo-shuffling, reciting period arrangement based on Ebinhaus memory rules.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{Jizhi Tutor Service - Online edu platform on Cloud}{Co-Leader}{}{}
-\item Applied HTML, CSS, Javascript (JQuery) to the front-end dev, used complex SQL Server database (with triggers, view, stored procedure, etc) and .NET platform for data storage and business logic.
-\item Lead the entire platform dev from designing, implementation to Cloud deployment and maintenance.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{General Coding - An APP to improve programmers' productivity}{Key Developer}{}{}
-\item Used fuzzy query algorithm (Levenshtein Distance) to recommend similar APIs in our Full-Text API search engine.
-\end{rSubsection}
-
 
 \end{rSection}
 
@@ -184,12 +182,32 @@
 %\href{https://github.com/vincenttsang/CompArch/blob/master/cache-replacer/p2-final-report/p2-final-report.pdf}{High performance cache replacement using re-reference interval prediction (RRIP)}.
 %\end{rSection}
 
+\begin{rSection}{Academic Experience}
+\begin{rSubsection}{Grader}{College Station, TX}{Texas A\&M University}{Sep. 2016 - Present}
+\item Test case development and test automation for \href{http://faculty.cse.tamu.edu/dilma/web-csce410-fall16/index.htm}{CSCE 410 Operating Systems}, involving frame management, memory paging, virtual memory, thread scheduling, device driver and file systems.
+\item Automated grading of \href{http://faculty.cse.tamu.edu/djimenez/312/}{CSCE 312 Computer Organization} coding assignments with \href{https://github.com/tamu-csce312/hw-test}{\textbf{bash} scripts}.
+\end{rSubsection}
+
+\begin{rSubsection}{Graduate Researcher}{College Station, TX}{Parasol Lab, supervised by Prof. Nancy M. Amato}{Sep. 2016 - May 2017}
+\item Worked with fundamental \textbf{C++} robotics libraries, like \href{https://parasol.tamu.edu/groups/amatogroup/research/UserGuided/Old/vizmo++/}{VIZMO++} and parallel computing library \href{https://parasol.tamu.edu/groups/rwergergroup/research/stapl/}{STAPL}.
+\item Generalizing embedding graph, flow graph and dynamic region utilities used in \href{http://wafr2016.berkeley.edu/papers/WAFR_2016_paper_36.pdf}{Dynamic Region-biased RRT}.
+\end{rSubsection}
+
+\begin{rSubsection}{Team Leader}{Weihai, China}{HIT Robot Innovation Lab}{May 2015 - Jan. 2016}
+\item Introduced matrix-based data structure for storing robot engine parameters and developed a stable gait planning system to produce RoboBasic codes for controlling engine motions.
+\end{rSubsection}
+
+\begin{rSubsection}{Teaching Assistant}{Weihai, China}{Harbin Inst. of Tech.}{Sep. 2014 - June 2016}
+\item For major courses like DB Systems, Computer Networking, Operating Systems, Compiler Principles, OOP, etc.
+\end{rSubsection}
+\end{rSection}
+
 \begin{rSection}{Publications}
 %{[1]Mengyuan Chao, }\underline{\bf Yukun Zeng}{ and Radu Stoleru. ``FCS: Feedback-based Customizable Scheduling For Stream Processing On Heterogeneous Mobile Devices.'' The 37th IEEE International Conference on Distributed Computing Systems (ICDCS 2017). \emph{In Progress}.
 %}
 %\vspace*{-0.2em}
 
-{[1]Yang Liu, }\underline{\bf Yukun Zeng}{ and Xuefeng Piao. ``High-Responsive Scheduling with MapReduce Performance Prediction on Hadoop YARN.'' Embedded and Real-Time Computing Systems and Applications (RTCSA), 2016 IEEE 22nd International Conference on. IEEE, 2016.
+{[1]Yang Liu, }\underline{\bf Yukun Zeng}{ and Xuefeng Piao. ``\href{http://ieeexplore.ieee.org/document/7579961/}{High-Responsive Scheduling with MapReduce Performance Prediction on Hadoop YARN.}'' Embedded and Real-Time Computing Systems and Applications (RTCSA), 2016 IEEE 22nd International Conference on. IEEE, 2016.
 }
 
 \end{rSection}
@@ -210,26 +228,6 @@
 {\bf People's Scholarship} 5 times \hfill {Oct. 2013, Oct. 2014, May 2015, Oct. 2015, Apr. 2016}
 \vspace*{-0.4em}
 
-\end{rSection}
-
-\begin{rSection}{Academic Experience}
-\begin{rSubsection}{Grader}{College Station, TX}{Texas A\&M University}{Sep. 2016 - Present}
-\item Test case development and test automation for \href{http://faculty.cse.tamu.edu/dilma/web-csce410-fall16/index.htm}{CSCE 410 Operating Systems}, involving frame management, memory paging, virtual memory, thread scheduling, device driver and file systems.
-\item Automated grading of \href{http://faculty.cse.tamu.edu/djimenez/312/}{CSCE 312 Computer Organization} coding assignments with \href{https://github.com/tamu-csce312/hw-test}{bash scripts}.
-\end{rSubsection}
-
-\begin{rSubsection}{Graduate Researcher}{College Station, TX}{Parasol Lab, supervised by Prof. Nancy M. Amato}{Sep. 2016 - May 2017}
-\item Worked with fundamental C++ robotics libraries, like \href{https://parasol.tamu.edu/groups/amatogroup/research/UserGuided/Old/vizmo++/}{VIZMO++} and parallel computing library \href{https://parasol.tamu.edu/groups/rwergergroup/research/stapl/}{STAPL}.
-\item Generalizing embedding graph, flow graph and dynamic region utilities used in \href{http://wafr2016.berkeley.edu/papers/WAFR_2016_paper_36.pdf}{Dynamic Region-biased RRT}.
-\end{rSubsection}
-
-\begin{rSubsection}{Team Leader}{Weihai, China}{HIT Robot Innovation Lab}{May 2015 - Jan. 2016}
-\item Introduced matrix-based data structure for storing robot engine parameters and developed a stable gait planning system to produce RoboBasic codes for controlling engine motions.
-\end{rSubsection}
-
-\begin{rSubsection}{Teaching Assistant}{Weihai, China}{Harbin Inst. of Tech.}{Sep. 2014 - June 2016}
-\item For major courses like DB Systems, Computer Networking, Operating Systems, Compiler Principles, OOP, etc.
-\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Professional Activities}
