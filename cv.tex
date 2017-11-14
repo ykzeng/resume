@@ -10,7 +10,7 @@
 % Trey Hunner (http://www.treyhunner.com/)
 %
 % Important note:
-% This template requires the resume.cls file to be in the same directory as the
+% This template requires the resume.cls file to be in the same directory as thehttps://preview.overleaf.com/public/czwvvxzknjqj/images/fa6f8726841f80932e8ac6e4de79722de090a3cc.jpeg
 % .tex file. The resume.cls file provides the resume style used for structuring the
 % document.
 %
@@ -22,27 +22,46 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.7in,top=0.7in,right=0.7in,bottom=0.7in]{geometry} % Document margins
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\pagestyle{fancy}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Yukun ZENG} % Your name
-\address{Cell: +1 (979)739 9315 \\ E-mail: yzeng@tamu.edu} % Your address
+\name{Yukun (Vincent) Zeng} % Your name
+\address{+1 (979)739 9315 \\ yzeng@tamu.edu}
+\address{603 Ethel Blvd., Bryan, TX 77802} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{Addr: 1600 Southwest Pkwy APT 1301 \\ College Station, TX 77840, U.S.} % Your phone number and email
+ % Your phone number and email
+ 
+\fancyfoot{} % clear all footer fields
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\faGithub \hspace{0.10ex} \href{https://github.com/ykzeng/}{github.com/ykzeng/}
+| \faLinkedin \hspace{0.10ex} \href{https://linkedin.com/in/yukunzeng/}{linkedin.com/in/yukunzeng/}}
 
 \begin{document}
-
+%\begin{rSection}{Objective}
+%Seeking student assistant positions for 2017 fall, see \href{https://github.com/vincenttsang}{Github} and \href{https://parasol.tamu.edu/~yzeng/}{Homepage} for more info about me.
+%\end{rSection}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 {\bf Texas A\&M University} \hfill {\bf College Station, TX} 
-\\ Master of Science in Computer Science \hfill {\em Expected Graduation: July, 2018}
+\\ Master of Science in Computer Science \hfill {\em Aug. 2016--May 2018}
+\\ GPA: 3.67/4.00
+\vspace*{-0.2em}
 
 {\bf Harbin Institute of Technology} \hfill {\bf Weihai, China} 
-\\ Bachelor of Engineering in Software Engineering \hfill {\em Sep. 2012--July 2016}a
-\\ GPA: Overall 3.5/4.0, Major 3.7/4.0
+\\ Bachelor of Engineering in Software Engineering \hfill {\em Sep. 2012--July 2016}
+\\ GPA: Overall 3.45/4.00, Major 3.70/4.00
 
 %Minor in Linguistics \smallskip \\
 %Member of Eta Kappa Nu \\
@@ -50,147 +69,175 @@
 
 
 \end{rSection}
+
+
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Campus Services}
-{\bf President} \hfill {HIT Robot Innovation Workshop} 
-\\{\bf Teaching Assistant} \hfill {School of Computer Sci. and Tech., HIT} 
-\\{\bf Research Assistant} \hfill {HIT-NS Joint R\&D Center} 
-\\{\bf Student Engineer} \hfill {HIT Network Center} 
+%\begin{rSection}{Campus Services}
+%{\bf President} \hfill {HIT Robot Innovation Workshop} 
+%\\{\bf Teaching Assistant} \hfill {School of Computer Sci. and Tech., HIT} 
+%\\{\bf Research Assistant} \hfill {HIT-NS Joint R\&D Center} 
+%\\{\bf Student Engineer} \hfill {HIT Network Center} 
 % Technical Strenths
 %\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 %Computer Languages &  C/C++, MATLAB \\
 %Software \& Tools & HTML, LaTeX, Excel, Gerris, Mathematica, ASPEN Plus, Tecplot \\
 %\end{tabular}
 
-\end{rSection}
+%\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
+\begin{rSection}{Academic Experience}
+\begin{rSubsection}{Grader}{College Station, TX}{Texas A\&M University}{Sep. 2016 - Present}
+\item Test case development and test automation for \href{http://faculty.cse.tamu.edu/dilma/web-csce410-fall16/index.htm}{CSCE 410 Operating Systems}, involving frame management, memory paging, virtual memory, thread scheduling, device driver and file systems.
+\item Automated grading of \href{http://faculty.cse.tamu.edu/djimenez/312/}{CSCE 312 Computer Organization} coding assignments with \href{https://github.com/tamu-csce312/hw-test}{\textbf{bash} scripts}.
+\end{rSubsection}
 
-\begin{rSection}{Experience}
+\begin{rSubsection}{Graduate Researcher}{College Station, TX}{Parasol Lab, supervised by Prof. Nancy M. Amato}{Sep. 2016 - May 2017}
+\item Worked with fundamental \textbf{C++} robotics libraries, like \href{https://parasol.tamu.edu/groups/amatogroup/research/UserGuided/Old/vizmo++/}{VIZMO++} and parallel computing library \href{https://parasol.tamu.edu/groups/rwergergroup/research/stapl/}{STAPL}.
+\item Generalizing embedding graph, flow graph and dynamic region utilities used in \href{http://wafr2016.berkeley.edu/papers/WAFR_2016_paper_36.pdf}{Dynamic Region-biased RRT}.
+\end{rSubsection}
 
-\begin{rSubsection}{Hi-Responsive Scheduler for Hadoop YARN}{July 2015 - June 2016}{Research Assistant, supervised by Prof. Yushan SUN}{HIT-Neighbor System Joint R\&D Center}
-\item We designed a light-weight virtual size calculation approach for Hadoop YARN.
-\item We proposed a novel job size prediction approach to do size-based scheduling on YARN.
-\item We carried out experiments on our FSPY scheduler and compared the results with Fair scheduler, noticing a
-substantial improvement in terms of response time while maintaining similar fairness.
+\begin{rSubsection}{Team Leader}{Weihai, China}{HIT Robot Innovation Lab}{May 2015 - Jan. 2016}
+\item Introduced matrix-based data structure for storing robot engine parameters and developed a stable gait planning system to produce RoboBasic codes for controlling engine motions.
+\end{rSubsection}
+
+\begin{rSubsection}{Teaching Assistant}{Weihai, China}{Harbin Inst. of Tech.}{Sep. 2014 - June 2016}
+\item For major courses like DB Systems, Computer Networking, Operating Systems, Compiler Principles, OOP, etc.
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Work Experience}
+\begin{rSubsection}{Big Data Engineer Intern}{Big Data at AT\&T}{Dallas, TX}{June. - Aug. 2017}
+\item Frauds detection by mining millions of billing records with \textbf{Hive} and \textbf{PySpark}, total profits \textasciitilde \$1.4M.
+\item Index results using Apache \textbf{Solr} and visualize billing deviations with customizable plots (e.g., Heatmap) on \href{https://github.com/lucidworks/banana}{Banana}.
+\item Deved National Access Mgmt. case tracker (full stack) with nice \textbf{Bootstrap} frontend that supports \textbf{AJAX} loading and autocompletion, \textbf{RESTful Java EE} backend and integrated it onto AAT Platform.
+\item Workflow automation with \textbf{Jenkins}, programming and debugging experience on \textbf{Hadoop}, \textbf{Spark} and \textbf{Tez}.
+\end{rSubsection}
+
+\begin{rSubsection}{Software Engineer Intern}{ARRIS Technology Co., Ltd.}{Shenzhen, China}{Jan. - May 2016}
+\item Network programming with \textbf{C} in \textbf{embedded Linux}, \textbf{iptables} chain control, modem performance benchmarking.
+\end{rSubsection}
+
+\begin{rSubsection}{Technical Solution Intern}{Neusoft}{Dalian, China}{July 2014 - Aug. 2014}
+\item Neusoft IM dev in Java with \textbf{socket}, \textbf{multithread} chating, chat history storage using \textbf{Oracle DB}.
+\end{rSubsection}
+\end{rSection}
+
+
+
+\begin{rSection}{Selected Projects}
+\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7579961/}{Hi-Responsive Scheduling with MR Performance Prediction on Hadoop YARN}}{Research Assistant}{}{}
+\item Pwd-less accessibility for scalable Hadoop cluster setup and job history tracking using \textbf{Hadoop REST APIs}.
+\item Benchmark Hadoop cluster with FaceBook trace (\textasciitilde 6k Jobs) and heterogeneous MapReduce/Spark/Tez workloads. 
+\item Size-based scheduler with \textbf{Linear Regression} job size prediction achieved \textbf{10x} faster response when heavily loaded.
+\end{rSubsection}
+
+\begin{rSubsection}{vMobiNet: Emulating Wireless Network across Virtual Mobi Systems on Xen}{Research Assistant}{}{}
+\item Deployed networked mobile clusters across Android virtual machines on \textbf{XenServer}.
+\item Centralized network control through \textbf{tc} to emulate wireless features in virtual network and network performance benchmark using \textbf{iperf}.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7335296/?arnumber=7335296}{Mobile Storm: Distributed Real-time Stream Processing for Mobile Cloud}}{Research Assistant}{}{}
+\item Proposed greedy and genetic algorithms for job topology allocation on multi workers with varying executors (NP-Hard), generally yields results within $30\%$ gap comparing to near-optimal solution (CPLEX) but runs 100x faster.
+\item Developed a neural-like topology generator for job submission simulation to test our allocation algorithm.
+\item Integrated facial processing utilities (including face detection, recognition, tracking, etc) and distributed computational tasks on MobiStorm platform, involving socket communication, multi-threading, stream processing, etc.
+\end{rSubsection}
+
+\begin{rSubsection}{Flash Vocabulary - Lightweight website for boosting vocabulary online}{Leader}{}{}
+\item Deved a front-end library in \textbf{CSS} to create a universal UI, avoided unneccesary page reloading through \textbf{AJAX}.
+\item Vocabulary pseudo-shuffling, reciting period arrangement based on \textbf{Ebinhaus} memory rules.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Jizhi Tutor Service - Online edu platform on Cloud}{Co-Leader}{}{}
+\item Applied \textbf{HTML, CSS, Javascript (JQuery)} to the front-end dev, used complex \textbf{SQL Server} database (with \textbf{triggers}, \textbf{view}, \textbf{stored procedure}, etc) and \textbf{.NET} platform for data storage and business logic.
+\item Lead the entire platform dev from designing, implementation to Cloud deployment and maintenance.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{General Coding - An APP to improve programmers' productivity}{Key Developer}{}{}
+\item Used \textbf{fuzzy query} algorithm (Levenshtein Distance) to recommend similar APIs in our full-text API search engine.
+\end{rSubsection}
+
+\begin{rSubsection}{CSCE 614 Computer Architecture}{advised by Prof. Daniel A. Jimenez}{}{}
+\item Cache behavior simulator with \textbf{LRU} and \textbf{random replacement} policies.
+\item \href{https://github.com/vincenttsang/CompArch/blob/master/branch-predictor/p1-final-report/p1-final-report.pdf}{Fast path-based neural branch predictor with \textbf{perceptron}}.
+\item \href{https://github.com/vincenttsang/CompArch/blob/master/cache-replacer/p2-final-report/p2-final-report.pdf}{High performance cache replacement using re-reference interval prediction (RRIP)}.
+\end{rSubsection}
+
+\begin{rSubsection}{CSCE 643 Multi-view Geometry Computer Vision}{advised by Prof. Dezhen Song}{}{}
+\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-1/bare_conf.pdf}{Image rectification}.
+\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-2/bare_conf.pdf}{Direct Linear Transformation with Max Likelihood Estimation (Sampson Error)}.
+\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-5/bare_conf.pdf}{Affinity 3D Reconstruction}.
+\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/final-proj/proposal/bare_conf.pdf}{3D Reconstruction from Uncalibrated Images}.
 \end{rSubsection}
 
 
 %------------------------------------------------
 
-\begin{rSubsection}{Motion Planning\&RoboDance Implementation}{May 2015 - Jan 2016}{Leader}{HIT Robot Innovation Workshop}
-\item Implemented a robot motion planning system to automatically construct consecutive motions for the switch
-between dierent robot poses and ensure the robot stability in the switch process.
-\item Programmed humanoid robot dance and solved the synchronization problem among multiple robots.
-\item Led workshop members to bring our robot dance on grand stages like charity ceremony and received interviews
-from local media.
-\end{rSubsection}
+%\begin{rSubsection}{Motion Planning\&RoboDance Implementation}{May 2015 - Jan 2016}{Leader}{HIT Robot Innovation Workshop}
+%\item Implemented a robot motion planning system and ensured the robot stability in the pose switch process.
+%\item Programmed humanoid robot dance and solved the synchronization problem among multiple robots.
+%\end{rSubsection}
 
 %------------------------------------------------
-
-\begin{rSubsection}{Flash Vocabulary - A lightweight website for boosting vocabulary online}{June - July 2015}{Leader}{HIT-Neighbor System Joint R\&D Center}
-\item Devised a novel MVC-derived pattern that best t the interaction mode of our website.
-\item Proposed Nearest Recital and Random Select approaches and perfectly combined them with Ebbinghaus Memory Rule to ensure users a solid memory of vocabulary.
-\item Developed a comprehensive front-end framework to simplify front-end codes and create a universal UI.
-\item Adopted AJAX and HTML5 Local Storage to avoid unnecessary reloading and enhance user experience.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{Jizhi Tutor Service Platform}{Apr. - June 2014}{Co-Leader}{Jizhi Pioneering Group}
-\item Analyzed market requirements by surveying the target market (students and parents).
-\item Designed the architecture, database and user interface of the platform with my partner.
-\item Implemented core business logic and adopted JQuery, Bootstrap to enhance visual effects.
-\item Independently deployed, operated and maintained the website on cloud.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{General Coding - An APP to improve programmers' productivity}{Dec. 2013 - Apr. 2014}{Core Developer}{HIT Network Center}
-\item Collaborated with the other teammate to design core data structure and algorithms.
-\item Created an interface for standard API document extension, making the application highly extendible.
-\item Implemented an objective linked-list and the fuzzy query algorithm (Levenshtein Distance) in our Full-Text
-Inter-PL (Programming Language) API search engine.
-\end{rSubsection}
 
 
 \end{rSection}
 
+%\begin{rSection}{Course Projects}
+%{\bf CSCE 614 Computer Architecture}\hfill {\emph advised by Daniel A. Jimenez}\\
+%Cache behavior simulator with LRU and random replacement policies.\\
+%\href{https://github.com/vincenttsang/CompArch/blob/master/branch-predictor/p1-final-report/p1-final-report.pdf}{Fast path-based neural branch predictor with perceptron}.\\
+%\href{https://github.com/vincenttsang/CompArch/blob/master/cache-replacer/p2-final-report/p2-final-report.pdf}{High performance cache replacement using re-reference interval prediction (RRIP)}.
+%\end{rSection}
 
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+%{[1]Mengyuan Chao, }\underline{\bf Yukun Zeng}{ and Radu Stoleru. ``FCS: Feedback-based Customizable Scheduling For Stream Processing On Heterogeneous Mobile Devices.'' The 37th IEEE International Conference on Distributed Computing Systems (ICDCS 2017). \emph{In Progress}.
+%}
+%\vspace*{-0.2em}
 
-\begin{rSection}{Internships} \itemsep -2pt
-
-%------------------------------------------------
-
-{\bf Neusoft IM System} \hfill {July 2014} 
-\\{\em Full-stack dev} \hfill {\em Neusoft Corporation}
-
-{\bf Embedded Network Development} \hfill {Jan. - Mar. 2016} 
-\\{\em Software Engineer} \hfill {\em Arris Technology}
-
-% Academic Achievements
-%\item Ranked in National Top 0.2\% (amongst 1,200,000 candidates) in JEE Mains 2013 and Top 1\% (amongst 150,000 candidates) in IIT-JEE Advanced 2013
-%\item Ranked in the State-wise Top 1\% (amongst 70,000 candidates) in State level Engineering competitive Exam (MP PET)
-%\item Stood first in MBD Talent Search Exam conducted by state government, competing against more than 1000 participants  
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Activities}
-
-%------------------------------------------------
-
-\begin{rSubsection}{HIT-MSRA Language Technology Summer School}{July 2013}{Volunteer}{}
-\item Received and served foreign experts (like IEEE Fellow Feng Wu) in English.
-\item Attended courses and student workshop as a volunteer, communicating with our predecessors in research elds
-of NLP, ML, Syntax Analyze, etc.
-\end{rSubsection}
-
-
-% Relevant Courses
-%\itab{\textbf{Core Courses}} \tab{}  \tab{\textbf{Other Courses}}
-%\\ \itab{Fluid Mechanics \& its applications } \tab{}  \tab{Computational Methods in Engineering}
-%\\ \itab{Thermodynamics} \tab{}  \tab{Fundamental of Computing} 
-%\\ \itab{Heat Transfer \& its applications} \tab{}  \tab{Probability and Statistics} 
-%\\ \itab{Mass Transfer \& its applications} \tab{} \tab{Calculus \& Linear Algebra}
-%\\ \itab{Transport Phenomena (ongoing)} \tab{} \tab{Introduction to Mechanics}
-% \\ \itab{Process Control (ongoing)} \tab{} \tab{Electrodynamics}
+{[1]Yang Liu, }\underline{\bf Yukun Zeng}{ and Xuefeng Piao. ``\href{http://ieeexplore.ieee.org/document/7579961/}{High-Responsive Scheduling with MapReduce Performance Prediction on Hadoop YARN.}'' Embedded and Real-Time Computing Systems and Applications (RTCSA), 2016 IEEE 22nd International Conference on. IEEE, 2016.
+}
 
 \end{rSection}
-
-\begin{rSection}{Publication}
-
-{[1]Yang Liu, }{\bf Yukun Zeng}{, Xuefeng Piao, ``High-Responsive Scheduling with MapReduce Performance}
-\\{Prediction on Hadoop YARN,'' 22nd IEEE International Conference on Embedded and Real-Time Com}
-\\{-puting Systems and Applications, to appear.}
-
-{[2]Gaoyang Li, Guangri Quan, }{\bf Yukun Zeng}{, ``MASS: A short reads alignment tool oriented to massive}
-\\{data,'' The Workshop on Algorithms in Bioinformatics 2016, submitted.}
-
-\end{rSection}
-
 
 \begin{rSection}{Honors\&Awards}
+{\bf Best Paper Award}{ for Outstanding Bachelor Dissertation} \hfill {July 2016}
+\vspace*{-0.4em}
 
-{\bf 1st Prize in National Robot Championship} \hfill {July 2015} 
-\\ {\em Among 54 universities and institutes nationwide} \hfill {\em administered by FIRA China}
+{\bf Meritorious Winner(1st Place)}{ in National Robot Championship} \hfill {July 2015}
+\vspace*{-0.4em}
 
-{\bf Honorable Mention in Mathematical Contest in Modeling (MCM)} \hfill {Apr. 2015} 
-\\ {\em Among 9773 international student teams} \hfill {\em administered by COMAP}
+{\bf Honorable Mention}{ in Mathematical Contest in Modeling (MCM)} \hfill {Apr. 2015}
+\vspace*{-0.4em}
 
-{\bf 2nd Prize in Software Design Competition} \hfill {Mar. 2014} 
-\\ {\em Approximately top 4\%} \hfill {\em administered by School of Computer Sci. and Tech., HIT}
+{\bf 2nd Place}{ in HIT Software Design Competition} \hfill {Mar. 2014} 
+\vspace*{-0.4em}
 
-{\bf People's Scholarship} 4 times \hfill {Oct. 2014, May 2015, Oct. 2015, Apr. 2016} 
+{\bf People's Scholarship} 5 times \hfill {Oct. 2013, Oct. 2014, May 2015, Oct. 2015, Apr. 2016}
+\vspace*{-0.4em}
 
-{\bf Social Work Scholarship} \hfill {Oct. 2013} 
+\end{rSection}
 
+\begin{rSection}{Professional Activities}
+{\bf Student Volunteer}\hfill Weihai, China\\
+HIT-MSRA Human Language Technology Summer School\hfill {\emph July, 2013}
+\vspace*{-0.2em}
+
+{\bf Peer Reviewer}\hfill College Station, TX\\
+IEEE Transactions on Robotics (T-RO)\\
+IEEE Robotics and Automation Letters (RA-L)\\
+Springer Journal of Intelligent \& Robotic Systems (JINT)\\
+ACM Transactions on Spatial Algorithms and Systems (TSAS)\\
+IEEE International Conference on Robotics and Automation (ICRA)\hfill {\emph Sep. 2016 -- Present}
 \end{rSection}
 
 \end{document}
