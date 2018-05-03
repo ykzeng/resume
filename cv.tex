@@ -29,7 +29,7 @@
 \usepackage{fancyhdr}
 \usepackage{xcolor}
 \usepackage{textcomp}
-\pagestyle{fancy}
+%\pagestyle{fancy}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
@@ -41,8 +41,8 @@
  % Your phone number and email
  
 \fancyfoot{} % clear all footer fields
-\renewcommand{\headrulewidth}{0pt}
-\rhead{Seeking 2018 Full-time SDE/Big Data Positions}
+%\renewcommand{\headrulewidth}{0pt}
+%\rhead{Seeking 2018 Full-time SDE/Big Data Positions}
 \cfoot{\faGithub \hspace{0.10ex} \href{https://github.com/ykzeng/}{github.com/ykzeng/}
 | \faLinkedin \hspace{0.10ex} \href{https://linkedin.com/in/yukunzeng/}{linkedin.com/in/yukunzeng/}}
 
@@ -56,12 +56,12 @@
 
 \begin{rSection}{Education}
 {\bf Texas A\&M University} \hfill {\bf College Station, TX} 
-\\ Master of Science in Computer Science \hfill {\em Aug. 2016--May 2018}
-\\ GPA: 3.67/4.00
+\\ Master of Science in Computer Science \hfill {\em Aug. 2016 - Aug. 2018}
+\\ GPA: 3.57/4.00
 \vspace*{-0.2em}
 
 {\bf Harbin Institute of Technology} \hfill {\bf Weihai, China} 
-\\ Bachelor of Engineering in Software Engineering \hfill {\em Sep. 2012--July 2016}
+\\ Bachelor of Engineering in Software Engineering \hfill {\em Sep. 2012 - July 2016}
 \\ GPA: Overall 3.45/4.00, Major 3.70/4.00
 
 %Minor in Linguistics \smallskip \\
@@ -95,11 +95,21 @@
 
 
 \begin{rSection}{Work Experience}
+
+{\bf Teaching Assistant} \hfill {Texas A\&M University} 
+\\ {\em College Station, TX} \hfill {\em Jan. 2018 - Present}
+\vspace*{-0.2em}
+
 \begin{rSubsection}{Big Data Engineer Intern}{Big Data at AT\&T}{Dallas, TX}{June. - Aug. 2017}
 \item Frauds detection by mining millions of billing records with \textbf{Hive} and \textbf{PySpark}, total profits \textasciitilde \$1.4M.
 \item Index results using Apache \textbf{Solr} and visualize billing deviations with customizable plots (e.g., Heatmap) on \href{https://github.com/lucidworks/banana}{Banana}.
 \item Deved National Access Mgmt. case tracker (full stack) with nice \textbf{Bootstrap} frontend that supports \textbf{AJAX} loading and autocompletion, \textbf{RESTful Java EE} backend and integrated it onto AAT Platform.
 \item Workflow automation with \textbf{Jenkins}, programming and debugging experience on \textbf{Hadoop}, \textbf{Spark} and \textbf{Tez}.
+\end{rSubsection}
+
+\begin{rSubsection}{Grader}{College Station, TX}{Texas A\&M University}{Sep. 2016 - Dec. 2017}
+\item Test case development and test automation for \href{http://faculty.cse.tamu.edu/dilma/web-csce410-fall16/index.htm}{CSCE 410 Operating Systems}, involving frame management, memory paging, virtual memory, thread scheduling, device driver and file systems.
+\item Automated grading of \href{http://faculty.cse.tamu.edu/djimenez/312/}{CSCE 312 Computer Organization} coding assignments with \href{https://github.com/tamu-csce312/hw-test}{\textbf{bash} scripts}.
 \end{rSubsection}
 
 \begin{rSubsection}{Software Engineer Intern}{ARRIS Technology Co., Ltd.}{Shenzhen, China}{Jan. - May 2016}
@@ -114,21 +124,24 @@
 
 
 \begin{rSection}{Selected Projects}
+\begin{rSubsection}{\href{http://dota2rec.github.io}{D2Rec - Dota2 Hero Item Recommender System}}{Team Leader}{}{}
+\item Crawled and preprocessed over 60,000 match records based on {\bf OpenDota}, analyzed and visualized hero-item correlations with {\bf Jupyter Notebook}.
+\item Proposed {\bf baseline recommender} purely based on {\bf weighted item frequency} among matches, which performs pretty well in recommending general items that fit heroes' personality.
+\item Proposed {\bf TDIPV} (Team Draft based Item Preference Variation) model to capture the {\bf use-against} and {\bf benefit-from} relations between enemies/allies and items.
+\item Applied item classification and {\bf item combination process tracking} to focus on combined/final items while diminishing significance of intermediate/basic items thereby ensuring the {\bf quality of recommendation}.
+\item Evaluated the system performance through both aspects of necissity and sufficiency, histograms and cumulative distributions show that with higher similarity an actual team's item is to our recommended item set, the chance of winning raises. An improvement from {\bf 0.68} to {\bf 0.83} is shown comparing TDIPV with baseline.
+\item Preliminary work in correlating {\bf temporal effects} and {\bf team situation} with item purchase.
+\end{rSubsection}
+
 \begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7579961/}{Hi-Responsive Scheduling with MR Performance Prediction on Hadoop YARN}}{Research Assistant}{}{}
 \item Pwd-less accessibility for scalable Hadoop cluster setup and job history tracking using \textbf{Hadoop REST APIs}.
 \item Benchmark Hadoop cluster with FaceBook trace (\textasciitilde 6k Jobs) and heterogeneous MapReduce/Spark/Tez workloads. 
 \item Size-based scheduler with \textbf{Linear Regression} job size prediction achieved \textbf{10x} faster response when heavily loaded.
 \end{rSubsection}
 
-\begin{rSubsection}{vMobiNet: Emulating Wireless Network across Virtual Mobi Systems on Xen}{Research Assistant}{}{}
-\item Deployed networked mobile clusters across Android virtual machines on \textbf{XenServer}.
-\item Centralized network control through \textbf{tc} to emulate wireless features in virtual network and network performance benchmark using \textbf{iperf}.
-\end{rSubsection}
-
-\begin{rSubsection}{\href{http://ieeexplore.ieee.org/document/7335296/?arnumber=7335296}{Mobile Storm: Distributed Real-time Stream Processing for Mobile Cloud}}{Research Assistant}{}{}
-\item Proposed greedy and genetic algorithms for job topology allocation on multi workers with varying executors (NP-Hard), generally yields results within $30\%$ gap comparing to near-optimal solution (CPLEX) but runs 100x faster.
-\item Developed a neural-like topology generator for job submission simulation to test our allocation algorithm.
-\item Integrated facial processing utilities (including face detection, recognition, tracking, etc) and distributed computational tasks on MobiStorm platform, involving socket communication, multi-threading, stream processing, etc.
+\begin{rSubsection}{EmuEdge - Realistic Edge-Clouds Emulation with SDN on Xen}{Research Assistant}{}{}
+\item Logged networking trace with \textbf{tc} and \textbf{iperf}, developed Android services for detailed sensor and wireless network data collection, such as accelerometer, lighting condition and wireless signal strength under a disaster scenario.
+\item Leveraged \textbf{Open vSwitch} and Linux Kernel forwarding for comprehensive {\bf Software Defined Networking} within a single server, including network shaping, topology customization that supports hierarchical and realistic network for VMs running on Xen.
 \end{rSubsection}
 
 \begin{rSubsection}{Flash Vocabulary - Lightweight website for boosting vocabulary online}{Leader}{}{}
@@ -155,13 +168,6 @@
 \item \href{https://github.com/vincenttsang/CompArch/blob/master/cache-replacer/p2-final-report/p2-final-report.pdf}{High performance cache replacement using re-reference interval prediction (RRIP)}.
 \end{rSubsection}
 
-\begin{rSubsection}{CSCE 643 Multi-view Geometry Computer Vision}{advised by Prof. Dezhen Song}{}{}
-\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-1/bare_conf.pdf}{Image rectification}.
-\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-2/bare_conf.pdf}{Direct Linear Transformation with Max Likelihood Estimation (Sampson Error)}.
-\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/hw-5/bare_conf.pdf}{Affinity 3D Reconstruction}.
-\item \href{https://github.com/ykzeng/multiview-geo-cv/blob/master/docs/final-proj/proposal/bare_conf.pdf}{3D Reconstruction from Uncalibrated Images}.
-\end{rSubsection}
-
 
 %------------------------------------------------
 
@@ -183,10 +189,6 @@
 %\end{rSection}
 
 \begin{rSection}{Academic Experience}
-\begin{rSubsection}{Grader}{College Station, TX}{Texas A\&M University}{Sep. 2016 - Present}
-\item Test case development and test automation for \href{http://faculty.cse.tamu.edu/dilma/web-csce410-fall16/index.htm}{CSCE 410 Operating Systems}, involving frame management, memory paging, virtual memory, thread scheduling, device driver and file systems.
-\item Automated grading of \href{http://faculty.cse.tamu.edu/djimenez/312/}{CSCE 312 Computer Organization} coding assignments with \href{https://github.com/tamu-csce312/hw-test}{\textbf{bash} scripts}.
-\end{rSubsection}
 
 \begin{rSubsection}{Graduate Researcher}{College Station, TX}{Parasol Lab, supervised by Prof. Nancy M. Amato}{Sep. 2016 - May 2017}
 \item Worked with fundamental \textbf{C++} robotics libraries, like \href{https://parasol.tamu.edu/groups/amatogroup/research/UserGuided/Old/vizmo++/}{VIZMO++} and parallel computing library \href{https://parasol.tamu.edu/groups/rwergergroup/research/stapl/}{STAPL}.
@@ -197,9 +199,6 @@
 \item Introduced matrix-based data structure for storing robot engine parameters and developed a stable gait planning system to produce RoboBasic codes for controlling engine motions.
 \end{rSubsection}
 
-\begin{rSubsection}{Teaching Assistant}{Weihai, China}{Harbin Inst. of Tech.}{Sep. 2014 - June 2016}
-\item For major courses like DB Systems, Computer Networking, Operating Systems, Compiler Principles, OOP, etc.
-\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Publications}
@@ -240,7 +239,7 @@ IEEE Transactions on Robotics (T-RO)\\
 IEEE Robotics and Automation Letters (RA-L)\\
 Springer Journal of Intelligent \& Robotic Systems (JINT)\\
 ACM Transactions on Spatial Algorithms and Systems (TSAS)\\
-IEEE International Conference on Robotics and Automation (ICRA)\hfill {\emph Sep. 2016 -- Present}
+IEEE International Conference on Robotics and Automation (ICRA)\hfill {\emph Sep., 2016 - May, 2017}
 \end{rSection}
 
 \end{document}
